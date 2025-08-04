@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calcula iFood</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Calcula iFood</h1>
+
+    <!-- Botão Iniciar -->
+    <button id="iniciarBtn" type="button">Iniciar</button>
+
+    <!-- Escolha do Tipo de Entrega -->
+    <div id="tipoEntrega" class="hidden">
+      <p>Escolha o tipo de entrega:</p>
+      <button id="propriaBtn" type="button">Entrega Própria</button>
+      <button id="parceiraBtn" type="button">Entrega Parceira</button>
+    </div>
+
+    <!-- Formulário de Cálculo -->
+    <div id="formulario" class="hidden">
+      <p id="tipoSelecionado"></p>
+
+      <label>Valor do Produto:
+        <input type="number" id="valorProduto" step="0.01" />
+      </label>
+
+      <label>Desconto:
+        <input type="number" id="valorDesconto" step="0.01" />
+      </label>
+
+      <label>Taxa de Entrega:
+        <input type="number" id="valorEntrega" step="0.01" />
+      </label>
+
+      <button id="calcularBtn" type="button">Calcular</button>
+      <button id="voltarBtn" type="button">Voltar</button>
+      <div id="resultado"></div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
